@@ -20,6 +20,13 @@ border-radius: 0 30px;
 position: relative;
 padding: 30px;
 }
+@media (max-width:450px) {
+    .text{
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
 .text::before{
     content: "\f007";
     font-family: "Font Awesome 6 Free";
@@ -53,6 +60,7 @@ form{
 }
  .fl label{
     font-size: 18px;
+    margin-bottom: 3px;
     color: #424141;
 }
 
@@ -97,20 +105,9 @@ form >input:last-of-type{
         transform: translatey(0px);
     }
     50%{
-        transform: translatey(-30px);
+        transform: translatey(-20px);
     }
     100%{
         transform: translatey(0);
     }
-}
-@keyframes transform_lf {
-    from{
-        transform: translateX(300px);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-input:hover{
-    background-color: red;
 }
